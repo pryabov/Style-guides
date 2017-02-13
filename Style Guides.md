@@ -6,7 +6,7 @@ Try to follow [Java Script Style Guide](https://github.com/AleksandrCh/Style-gui
 ## 2) CSS Style Guide
 Try to follow [CSS Style Guide](https://github.com/AleksandrCh/Style-guides/blob/master/CSSStyleGuide.md)
 
-## 2) CSS Style Guide
+## 3) Angular 2 Style Guide
 Try to follow [Angular 2 Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
 
 ## 4) CSS code organization
