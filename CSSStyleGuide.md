@@ -457,3 +457,6 @@ div.selector
 ```css
 div.file-upload div:nth-child(2) > span
 ```
+### CSS code organization
+
+Try to follow [BEM metodology](https://en.bem.info/)
