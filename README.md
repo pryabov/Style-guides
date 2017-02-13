@@ -27,7 +27,7 @@ var result = prompt(
     aCaption);
 ```
     
-![Image of Yaktocat](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) Right
+![Image of Yaktocat](https://github.com/AleksandrCh/Style-guides/blob/master/images/like20.png?raw=true) Right
  
 ```javascript
 $('.navigation-menu')
