@@ -18,8 +18,7 @@ How to configure? [Awaits to be discussed]
  
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: When wrapping lines, indent to line up with a related item on the previous line.
 
-Right
- 
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript 
 var result = prompt(
     aMessage,
@@ -27,8 +26,7 @@ var result = prompt(
     aCaption);
 ```
     
-Right
- 
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 $('.navigation-menu')
     .find('li')
@@ -42,13 +40,14 @@ $('.navigation-menu')
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Separate binary operators with spaces.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 var y = (10 + x) / 12;
 ```
+
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put spaces after commas and semicolons, but not before.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript 
  function f(a, b, c, d) {
  
@@ -57,14 +56,14 @@ var y = (10 + x) / 12;
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put spaces after keywords, e.g.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 if (x > 0)
 ```
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put one (or two) blank lines between block definitions.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 function f() {
     var contextWidth = getContextWidth();
@@ -89,7 +88,7 @@ function f() {
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Indent comments to the same level as code that it aimed to clarify.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 ko.exportSymbol = function (koPath, object) {
     var tokens = koPath.split(".");
@@ -106,7 +105,7 @@ ko.exportSymbol = function (koPath, object) {
 };
 ```
 
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
 ```javascript
 ko.exportSymbol = function (koPath, object) {
     var tokens = koPath.split(".");
