@@ -39,6 +39,7 @@
 ```
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Keeping lines to 120 characters or less
+
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put multiple CSS properties on the same line, put them on a new line instead.
  
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
@@ -393,61 +394,55 @@ By doing this you will make sure, that browser will pick standardized property i
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```css
 .selector {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-DO NOT
-Icon
-Use "magic numbers".
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "magic numbers".
+
 Magic number is a circumstantial number, or number with purpose of fixing symptoms, not real issues, and as such, we should not rely on it.
  
-DO
-Icon
-Write cross-browser CSS as much as possible.
-CONSIDER
-Icon
-Falling back to conditional comments and browser specific hacks, if and only if it is technically infeasible to achieve desirable behavior in cross-browser manner. 
-CONSIDER
-Icon
-Using Normalize.css to normalize inconsistencies in user-agent styles. 
-DO NOT
-Icon
-Allow parent container to collapse when there is a content within.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write cross-browser CSS as much as possible.
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Falling back to conditional comments and browser specific hacks, if and only if it is technically infeasible to achieve desirable behavior in cross-browser manner. 
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Using Normalize.css to normalize inconsistencies in user-agent styles. 
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Allow parent container to collapse when there is a content within.
+
 By allowing container to collapse, you make your surrounding markup easy to flow in unpredictable manner.
  
  
 
-DO NOT
-Icon
-Use "!important" to overcome selector specificity issues when it is possible to avoid it.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "!important" to overcome selector specificity issues when it is possible to avoid it.
+
 However, there are cases where !important is allowed. For example, state styles.
  
-DO
-Icon
-Prefix selectors with unique prefix, when you have a need to isolate component or whole application from outer environment.
-DO NOT
-Icon
-Over-qualify selectors with non-semantic parts.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Prefix selectors with unique prefix, when you have a need to isolate component or whole application from outer environment.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Over-qualify selectors with non-semantic parts.
  
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```css
 .selector
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```css
 div.selector
-CONSIDER
-Icon
- Using grunt-autoprefixer or similar tool to easily manage necessary browser prefixes.
-DO
-Icon
-Attempt to remove code before adding more, when fixing an issue.
-DO NOT
-Icon
-Tie selectors to particular DOM structure. Introduce semantic parts instead.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Using grunt-autoprefixer or similar tool to easily manage necessary browser prefixes.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Attempt to remove code before adding more, when fixing an issue.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Tie selectors to particular DOM structure. Introduce semantic parts instead.
  
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```css
 .file-upload .file-upload-info .file-upload-info-title
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```css
 div.file-upload div:nth-child(2) > span
- 
+```
