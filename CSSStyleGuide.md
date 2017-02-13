@@ -16,6 +16,7 @@
 ### Indentation
 
 ![](/images/right25.png) DO: Use four spaces to indent properties in a body of the ruleset.
+
 ![](/images/right25.png) DO: Rule sets for media queries and keyframes should be indented one level in.
  
 ![](/images/rightmark20.png)
@@ -114,6 +115,7 @@ input[type='text'] {
 ### Whitespacing
 
 ![](/images/right25.png) DO: Separate each ruleset by a blank line.
+
 ![](/images/right25.png) DO: Leave opening curly brace on the same line with selector portion of the Rule Set.
  
 ![](/images/rightmark20.png)
@@ -231,6 +233,7 @@ input[type="text"] {
 ### Colon and double colon
 
 ![](/images/right25.png?raw=true) DO: Use double colon for pseudo-elements and single colon for pseudo-classes when all targeting platforms support double-colon notation (typically IE > 8).
+
 ![](/images/right25.png?raw=true) DO: Use single colon for pseudo-elements and pseudo-classes when at least one of the targeting platforms doesn't support double colon notation (typically IE < 9).
 
 ### Grouping
@@ -278,6 +281,7 @@ This process can be automated with tools like CSSComb.
 ### Shorthands
 
 ![](/images/wrong25.png) DO NOT: Put CSS unit specification after "0" values, unless necessary, such as with transition-duration.
+
 ![](/images/right25.png) DO: Use following notations to define colors: hex, rgba, hsl, hsla notations, while rgb and shorthand notations are disallowed.
  
 ![](/images/rightmark20.png)
@@ -290,6 +294,7 @@ rgb(255, 113, 80), white, black
 ```
 
 ![](/images/wrong25.png) DO NOT: Use shorthand hex values.
+
 ![](/images/right25.png) DO: Use lowercase hex values.
  
 ![](/images/rightmark20.png)
@@ -360,6 +365,7 @@ Names that are specific and reflect the purpose of the element should be preferr
 ```
 
 ![](/images/right25.png) DO: Maintain a glossary of abbreviations used for id and class names.
+
 ![](/images/right25.png) DO: Use hyphen-delimited case for id and class names.
  
 ![](/images/rightmark20.png)
@@ -411,7 +417,9 @@ Magic number is a circumstantial number, or number with purpose of fixing sympto
 ![](/images/right25.png) DO: Write cross-browser CSS as much as possible.
 
 ![](/images/consider25.png) CONSIDER: Falling back to conditional comments and browser specific hacks, if and only if it is technically infeasible to achieve desirable behavior in cross-browser manner. 
+
 ![](/images/consider25.png) CONSIDER: Using Normalize.css to normalize inconsistencies in user-agent styles. 
+
 ![](/images/wrong25.png) DO NOT: Allow parent container to collapse when there is a content within.
 
 By allowing container to collapse, you make your surrounding markup easy to flow in unpredictable manner.
@@ -423,6 +431,7 @@ By allowing container to collapse, you make your surrounding markup easy to flow
 However, there are cases where !important is allowed. For example, state styles.
  
 ![](/images/right25.png) DO: Prefix selectors with unique prefix, when you have a need to isolate component or whole application from outer environment.
+
 ![](/images/wrong25.png) DO NOT: Over-qualify selectors with non-semantic parts.
  
 ![](/images/rightmark20.png)
@@ -435,7 +444,9 @@ div.selector
 ```
 
 ![](/images/consider25.png) CONSIDER: Using grunt-autoprefixer or similar tool to easily manage necessary browser prefixes.
+
 ![](/images/right25.png) DO: Attempt to remove code before adding more, when fixing an issue.
+
 ![](/images/wrong25.png) DO NOT: Tie selectors to particular DOM structure. Introduce semantic parts instead.
  
 ![](/images/rightmark20.png)
