@@ -416,7 +416,7 @@ Magic number is a circumstantial number, or number with purpose of fixing sympto
 
 By allowing container to collapse, you make your surrounding markup easy to flow in unpredictable manner.
  
- 
+![](/images/overflow-float.png)
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "!important" to overcome selector specificity issues when it is possible to avoid it.
 
