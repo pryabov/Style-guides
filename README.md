@@ -1,4 +1,4 @@
-# Java script style-guide
+# Java Script style-guide
 
 ## Code Formatting Guidelines
 
@@ -19,9 +19,8 @@ Enforce indentation rules at compile time with JSHint.
 How to configure? [Awaits to be discussed]
  
 #### DO
-Icon
 When wrapping lines, indent to line up with a related item on the previous line.
- 	
+
 Right
  
 ```javascript 
@@ -39,4 +38,3 @@ $('.navigation-menu')
     .css('background-color', 'red')
     .show();
 ```
-
