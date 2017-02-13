@@ -1,0 +1,1 @@
+for now we can follow official style guide https://angular.io/docs/ts/latest/guide/style-guide.html
