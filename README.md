@@ -190,6 +190,7 @@ angular.scenario.ObjectModel.prototype.getDefinitionPath = function (spec) {
 ### Semicolons
 
 ![](/images/right25.png) DO: Always use semicolons.
+
 ![](/images/right25.png) DO: Put semicolons at the end of function expressions.
  	
 ![](/images/rightmark20.png)
@@ -292,6 +293,7 @@ else {
 ### Naming
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write all names in US English.
+
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use following naming rules:
 * Function Names: camelCase
 * Constructor Functions: PascalCase
@@ -408,6 +410,7 @@ function Entity(id, name) {
 ```
 
 ![](/images/right25.png) DO: Name Boolean properties and variables with an affirmative phrase (canSeek instead of cantSeek). Optionally, you can also prefix Boolean properties with "is," "can," or "has," but only where it adds value.
+
 ![](/images/right25.png) DO: Use plural to name collections.
  	
 ![](/images/rightmark20.png)
@@ -513,7 +516,9 @@ function f(items) {
 ### Function declarations
 
 ![](/images/wrong25.png) DO NOT: Put space between the name of a function and the "(" (left parenthesis) of its parameter list.
+
 ![](/images/right25.png) DO: Put one space between the ")" (right parenthesis) and the "{" (left curly brace) that begins the statement body.
+
 ![](/images/right25.png) DO: Align "}" (right curly brace) with the line containing the beginning of the declaration of the function.
  	
 ![](/images/rightmark20.png)
@@ -567,7 +572,9 @@ if (x) {
 ###Strict Mode
 
 ![](/images/right25.png) DO: Use strict execution mode.
+
 ![](/images/wrong25.png) DO NOT: Apply strict mode to a whole file.
+
 Instead, apply strict mode selectively at function level.
 
 Applying strict mode to whole file can potentially brake your application after script minification.
@@ -653,6 +660,7 @@ Almost all of the proper use cases of Eval fall under situation where you need t
 ### Undefined
 
 ![](/images/right25.png) DO: Treat undefined as representation of system-level, unexpected, or error-like absence of value and null as representation of program-level, normal, or expected absence of value.
+
 ![](/images/wrong25.png) DO NOT: Assign undefined directly to represent the intentional absence of any object value. Assign null or semantically default value instead.
  	
 ![](/images/wrongmark20.png)
@@ -940,7 +948,9 @@ for (var key in person) {
 ```
 
 ### === and !== operators
+
 ![](/images/right25.png) DO: Prefer strict comparisons ("===" and "!==").
+
 ![](/images/consider25.png) CONSIDER: Using regular comparisons where implicit type casting is desirable.
  	
 ![](/images/rightmark20.png)
