@@ -12,12 +12,11 @@ Think of this guideline as a recommendation not a rule. Do not sacrifice express
  
 ![Image of Yaktocat](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Mix indentation styles within a project.
 
-#### CONSIDER:
-Enforce indentation rules at compile time with JSHint.
+![Image of Yaktocat](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Enforce indentation rules at compile time with JSHint.
+
 How to configure? [Awaits to be discussed]
  
-#### DO
-When wrapping lines, indent to line up with a related item on the previous line.
+![Image of Yaktocat](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: When wrapping lines, indent to line up with a related item on the previous line.
 
 Right
  
