@@ -34,7 +34,7 @@ $('.navigation-menu')
     .show();
 ```
 
-## Whitespacing
+### Whitespacing
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put trailing spaces at the end of the lines, even after binary operators, commas or semicolons.
 
@@ -124,7 +124,7 @@ ko.exportSymbol = function (koPath, object) {
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write comments to explain a purpose of code blocks, but not what is does.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
 ```javascript
 // Internally, all KO objects are attached to koExports (even the non-exported ones whose names will be minified by the closure compiler).
 // In the future, the following "ko" variable may be made distinct from "koExports" so that private objects are not externally reachable.
@@ -138,21 +138,20 @@ var foo = 3;
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: When wrapping lines, indent to line up with a related item on the previous line.
 
-DO NOT
-Icon
-Write comments for every single line of code.
-DO
-Icon
-Start sentences with a properly capitalized word, and end them with punctuation.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Write comments for every single line of code.
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Start sentences with a properly capitalized word, and end them with punctuation.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 // Google Closure Compiler helpers (used only to make the minified file smaller).
 ko.exportSymbol = function(koPath, object) {
-CONSIDER
-Icon
-Documenting all files, classes, methods and properties with JSDoc comments using appropriate tags and types.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Documenting all files, classes, methods and properties with JSDoc comments using appropriate tags and types.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 /**
   * @ngdoc method
   * @name ngMock.$timeout#flushNext
@@ -166,8 +165,10 @@ Documenting all files, classes, methods and properties with JSDoc comments using
 $delegate.flushNext = function (expectedDelay) {
     $browser.defer.flushNext(expectedDelay);
 };
+```
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 /**
  * Computes the path of definition describe blocks that wrap around
  * this spec.
@@ -184,76 +185,88 @@ angular.scenario.ObjectModel.prototype.getDefinitionPath = function (spec) {
     }
     return path;
 };
-Semicolons
-DO
-Icon
-Always use semicolons.
-DO
-Icon
-Put semicolons at the end of function expressions.
+```
+
+### Semicolons
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Always use semicolons.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put semicolons at the end of function expressions.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var foo = function () {
     return true;
 };  // semicolon here.
-DO NOT
-Icon
-Put semicolons at the end of function declarations.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put semicolons at the end of function declarations.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function foo() {
     return true;
 }  // no semicolon here.
-Quotes
-DO
-Icon
-Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What ABSOLUTELY MUST be enforced is consistency. Never mix quotes in the same project. Pick one style and stick with it.
-Block statements
-DO
-Icon
-Indent enclosed statements with four more spaces.
+```
+
+### Quotes
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Whether you prefer single or double shouldn't matter, there is no difference in how JavaScript parses them. What **ABSOLUTELY** MUST be enforced is consistency. **Never mix quotes in the same project. Pick one style and stick with it.**
+
+### Block statements
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Indent enclosed statements with four more spaces.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 if (condition) {
     firstAction();  // Add 4 more spaces within the body of compound statement.
     secondAction();
 }
- Wrong
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 if (condition) {
 firstAction();
 secondAction();
 }
-DO
-Icon
-Place "{" (left curly brace) at the end of the line that begins the compound statement.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Place "{" (left curly brace) at the end of the line that begins the compound statement.
 Place "}" (right curly brace) at the begin of new line and indent it to align with the beginning of the line containing the matching "{" (left curly brace).
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 if (condition) {
     firstAction();
     secondAction();
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 if (condition)
 {
     firstAction();
     secondAction();
 }
-DO
-Icon
-Braces should be used around all statements, even single statements, when they are part of a control structure, such as an "if" or "for" statement. This makes it easier to add statements without accidentally introducing bugs.
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Braces should be used around all statements, even single statements, when they are part of a control structure, such as an "if" or "for" statement. This makes it easier to add statements without accidentally introducing bugs.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 if (condition) {
     action();
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 if (condition) { action(); }
-DO
-Icon
-Put else clause at the same line as closing "}" bracket of "if" statement.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put else clause at the same line as closing "}" bracket of "if" statement.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 if (valuesToPush instanceof Array) {
     array.push.apply(array, valuesToPush);
 } else {
@@ -261,7 +274,9 @@ if (valuesToPush instanceof Array) {
         array.push(valuesToPush[i]);
     }
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 if (valuesToPush instanceof Array) {
     array.push.apply(array, valuesToPush);
 }
@@ -270,24 +285,25 @@ else {
         array.push(valuesToPush[i]);
     }
 }
-Naming Guidelines
-Naming
-DO
-Icon
-Write all names in US English.
-DO
-Icon
-Use following naming rules:
-Function Names: camelCase
-Constructor Functions: PascalCase
-Variable Names: camelCase
-Enum Names: PascalCase
-Enum Values: SCREAMING_CAPS
-Method Names: camelCase
-Constants: SCREAMING_CAPS
-Namespace Names: PascalCase
+```
+
+## Naming Guidelines
+
+### Naming
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write all names in US English.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use following naming rules:
+* Function Names: camelCase
+* Constructor Functions: PascalCase
+* Variable Names: camelCase
+* Enum Names: PascalCase
+* Enum Values: SCREAMING_CAPS
+* Method Names: camelCase
+* Constants: SCREAMING_CAPS
+* Namespace Names: PascalCase
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var App = {};
  
 App.AccessMode = {
@@ -303,65 +319,80 @@ App.ApplicationViewModel = function () {
         var version = APPLICATION_VERSION;
     };
 };
-DO
-Icon
-Group related constants within a single object created as a holder for constants, emulating an enumerated type.
- 	
- Right
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Group related constants within a single object created as a holder for constants, emulating an enumerated type.
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var NodeTypes = {
     ELEMENT: 1,
     DOCUMENT: 2
 };
-DO NOT
-Icon
-Use abbreviations
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use abbreviations
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 createEl, cls, cmpStrs
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 createElement, class, compareStrings
-DO
-Icon
-Capitalize both letters of 2-letter acronyms.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Capitalize both letters of 2-letter acronyms.
+
 Capitalization rules should not conflict with general naming guidelines. If first letter of acronym should be small – do not apply capitalization to the rest of the letters.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function getIOResult() {
  
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function getIoResult() {
  
 }
-DO
-Icon
-Capitalize only first letter of acronyms longer than 2 letters.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Capitalize only first letter of acronyms longer than 2 letters.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var formattedXml;
  
 function getHtml() {
  
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 var formattedXML;
  
 function getHTML() {
  
 }
-DO NOT
-Icon
-Apply capitalization rules of acronyms for non-acronyms even if they look alike.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Apply capitalization rules of acronyms for non-acronyms even if they look alike.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 ID, OK, PI
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 Id, Ok, Pi
-CONSIDER
-Icon
-Prefixing private properties and methods with leading underscore.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Prefixing private properties and methods with leading underscore.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function Entity(id, name) {
     var _id = id;
     var _name = name;
@@ -374,41 +405,44 @@ function Entity(id, name) {
         return _name;
     }
 }
-DO
-Icon
-Name Boolean properties and variables with an affirmative phrase (canSeek instead of cantSeek). Optionally, you can also prefix Boolean properties with "is," "can," or "has," but only where it adds value.
-DO
-Icon
-Use plural to name collections.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Name Boolean properties and variables with an affirmative phrase (canSeek instead of cantSeek). Optionally, you can also prefix Boolean properties with "is," "can," or "has," but only where it adds value.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use plural to name collections.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 Items, Entities, Errors
-DO NOT
-Icon
-Use negated boolean variable names.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use negated boolean variable names.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 isNotError, isNotFound
-DO
-Icon
-Put "Error" suffix at the end of Exception classes.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put "Error" suffix at the end of Exception classes.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 NotFoundError, OutOfRangeError, BusinessLogicError
-CONSIDER
-Icon
-Methods returning an object MAY be named after what they return, and methods returning void after what they do.
-Declaration Guidelines
-Variable declaration
-DO
-Icon
-Declare variable with "var" statement before actually using it.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Methods returning an object MAY be named after what they return, and methods returning void after what they do.
+
+## Declaration Guidelines
+
+### Variable declaration
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Declare variable with "var" statement before actually using it.
+
 Keep in mind that if you assign value to non-existing variable it automatically becomes global, that's why you should carefully follow aforementioned rule all the time.
-DO
-Icon
-Use multiple "var" statements if you need to declare multiple variables.
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use multiple "var" statements if you need to declare multiple variables.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function f() {
     var a = 1;
     var b = 2;
@@ -416,11 +450,12 @@ function f() {
  
     return c / 2;
 }
-DO NOT
-Icon
-Combine variable declarations under single "var statement".
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Combine variable declarations under single "var statement".
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function f() {
     var a = 1,
         b = 2,
@@ -428,11 +463,12 @@ function f() {
  
     return c / 2;
 }
-DO
-Icon
-Declare variables close to where they are actually used.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Declare variables close to where they are actually used.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function f(items) {
     var numberOfItems = items.length;
  
@@ -441,12 +477,14 @@ function f(items) {
         item.sell();
     }
 }
-DO NOT
-Icon
-Place all variable declarations at the beginning of the function.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Place all variable declarations at the beginning of the function.
+
 While many practitioners strongly encourage this style it serves no purpose for readability and modularity of your code, and primarily aimed to shield developers from nuances of script execution.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function f(items) {
     var numberOfItems = items.length;
     var item;
@@ -457,7 +495,9 @@ function f(items) {
         item.sell();
     }
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function f(items) {
     var numberOfItems = items.length,
         item,
@@ -468,47 +508,51 @@ function f(items) {
         item.sell();
     }
 }
-Function declarations
-DO NOT
-Icon
-Put space between the name of a function and the "(" (left parenthesis) of its parameter list.
-DO
-Icon
-Put one space between the ")" (right parenthesis) and the "{" (left curly brace) that begins the statement body.
-DO
-Icon
-Align "}" (right curly brace) with the line containing the beginning of the declaration of the function.
+```
+
+### Function declarations
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put space between the name of a function and the "(" (left parenthesis) of its parameter list.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put one space between the ")" (right parenthesis) and the "{" (left curly brace) that begins the statement body.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Align "}" (right curly brace) with the line containing the beginning of the declaration of the function.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function f() {
  
 }
-DO
-Icon
-Put one space between the word function and the "(" (left parenthesis).
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Put one space between the word function and the "(" (left parenthesis).
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 div.addEventListener('click', function (e) {
     return false;
 });
-DO NOT
-Icon
-Use function declarations within block
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use function declarations within block
+
 While most script engines support Function Declarations within blocks it is not part of ECMAScript (see ECMA-262, clause 13 and 14). Worse implementations are inconsistent with each other and with future EcmaScript proposals. ECMAScript only allows for Function Declarations in the root statement list of a script or function. Instead use a variable initialized with a Function Expression to define a function within a block:
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 if (x) {
   function foo() {}
 }
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 if (x) {
     var foo = function () {};
 }
-DO
-Icon
-When defining IIFE, put function call outside of parenthesis.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: When defining IIFE, put function call outside of parenthesis.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 (function () {
     var x = 10;
 })();
@@ -516,17 +560,20 @@ When defining IIFE, put function call outside of parenthesis.
 (function () {
     var x = 10;
 }());
-Functional Guidelines
-Strict Mode
-DO
-Icon
-Use strict execution mode.
-DO NOT
-Icon
-Apply strict mode to a whole file. Instead, apply strict mode selectively at function level.
+```
+
+## Functional Guidelines
+
+###Strict Mode
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use strict execution mode.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Apply strict mode to a whole file.
+Instead, apply strict mode selectively at function level.
+
 Applying strict mode to whole file can potentially brake your application after script minification.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 'use strict';
  
 function Person() {
@@ -542,89 +589,107 @@ function Person() {
         this.lastName = 'Crockford';
     }
 })();
-Eval
-DO NOT
-Icon
-Use Eval for application level activities (parsing JSON responses, type casting, e.t.c).
+```
+
+### Eval
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use Eval for application level activities (parsing JSON responses, type casting, e.t.c).
+
 Improper use of Eval leads to security, maintainability and performance issues.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 var request = new XMLHttpRequest();
  
 request.addEventListener('load', function () {
     var jsonData = this.responseText;
     var data = eval('(' + jsonData + ')');
 });
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var request = new XMLHttpRequest();
  
 request.addEventListener('load', function () {
     var jsonData = this.responseText;
     var data = JSON.parse(jsonData);
 });
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var request = new XMLHttpRequest();
 request.responseType = 'json';
  
 request.addEventListener('load', function () {
     var data = this.response;
 });
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 var numberAsString = '10';
 var number = eval(numberAsString);
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var numberAsString = '10';
 var number = Number(numberAsString);
-DO NOT
-Icon
-Use any forms of implicit Eval to satisfy previous guideline.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use any forms of implicit Eval to satisfy previous guideline.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 setTimeout('alert("Implicit eval");', 0);
 setInterval('alert("Implicit eval");', 0);
 (new Function('alert("Implicit eval");'))();
-CONSIDER
-Icon
-Wise use of Eval for framework level activities, when it is not possible to avoid it.
-Almost all of the proper use cases of Eval fall under situation where you need to execute 3rd party code but for some reasons it`s not technically feasible to load with <script> tag.
-Undefined
-DO
-Icon
-Treat undefined as representation of system-level, unexpected, or error-like absence of value and null as representation of program-level, normal, or expected absence of value.
-DO NOT
-Icon
-Assign undefined directly to represent the intentional absence of any object value. Assign null or semantically default value instead.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Wise use of Eval for framework level activities, when it is not possible to avoid it.
+
+Almost all of the proper use cases of Eval fall under situation where you need to execute 3rd party code but for some reasons it's not technically feasible to load with `<script>` tag.
+
+### Undefined
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Treat undefined as representation of system-level, unexpected, or error-like absence of value and null as representation of program-level, normal, or expected absence of value.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Assign undefined directly to represent the intentional absence of any object value. Assign null or semantically default value instead.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function ContestFilter() {
     this.contestId = undefined;
     this.status = undefined;
     this.duration = undefined;
 }
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function ContestFilter() {
     this.contestId = null;
     this.status = null;
     this.duration = null;
 }
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function ContestFilter() {
     this.contestId = 0;
     this.status = null;
     this.duration = 0;
 }
- 
-Modularity
-CONSIDER
-Icon
-Wrapping script files into IIFE to limit its visibility and protect from outer impact.
+```
+
+### Modularity
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Wrapping script files into IIFE to limit its visibility and protect from outer impact.
+
 This technique facilitates next benefits:
-Allows encapsulating implementation details into local variables and exposing publicly visible API relying on closures
-Provides convenient point for application of strict mode
-Allows to protect your script from outer environment by capturing dependencies as parameters
+* Allows encapsulating implementation details into local variables and exposing publicly visible API relying on closures
+* Provides convenient point for application of strict mode
+* Allows to protect your script from outer environment by capturing dependencies as parameters
  
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 (function ($, undefined) {
     'use strict';
 \\
@@ -636,11 +701,12 @@ Allows to protect your script from outer environment by capturing dependencies a
         }
     };
 }(jQuery));
-DO NOT
-Icon
-Artificially introduce IIFE when file is already wrapped with a function.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Artificially introduce IIFE when file is already wrapped with a function.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 (function () {
     'use strict';
  
@@ -654,7 +720,9 @@ Artificially introduce IIFE when file is already wrapped with a function.
         };
     });
 })();
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 define(function (require) {
     'use strict';
  
@@ -666,12 +734,14 @@ define(function (require) {
         }
     };
 });
-DO
-Icon
-Group related functionality into namespaces.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Group related functionality into namespaces.
+
 JavaScript has no notion of namespaces, but you can emulate them with nested objects.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var App = {};
  
 App.Models = {
@@ -684,7 +754,9 @@ App.Models = {
         this.name = name;
     }
 };
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -693,19 +765,24 @@ function Person(firstName, lastName) {
 function Activity(name) {
     this.name = name;
 }
-Exceptions
-DO
-Icon
-Use custom exceptions to indicate exceptional flow of execution.
+```
+
+### Exceptions
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use custom exceptions to indicate exceptional flow of execution.
  	
- Declaration
+Declaration
+```javascript
 function OutOfRangeError(value) {
     this.message = 'Value ' + value + ' is out of range.';
 }
  
 OutOfRangeError.prototype = new Error();
 OutOfRangeError.prototype.constructor = OutOfRangeError;
- Usage
+```
+
+Usage
+```javascript
 function f(x) {
     if (x < 0) {
         throw new OutOfRangeError('x');
@@ -713,11 +790,12 @@ function f(x) {
  
     return x * 2;
 }
-DO NOT
-Icon
-Combine error code or inject error member into return value of a function.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Combine error code or inject error member into return value of a function.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function f(x) {
     if (x < 0) {
         return false;
@@ -725,7 +803,9 @@ function f(x) {
  
     return x * 2;
 }
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 function f(x) {
     var result = {
         value: null,
@@ -741,29 +821,35 @@ function f(x) {
  
     return result;
 }
-{} and []
-DO
-Icon
-Use {} instead of new Object().
-Use [] instead of new Array().
-Wrapper objects for primitive types
-DO NOT
-Icon
-Use wrapper objects for primitive types.
+```
+
+### {} and []
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: 
+* Use {} instead of new Object().
+* Use [] instead of new Array().
+
+### Wrapper objects for primitive types
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use wrapper objects for primitive types.
+
 Once you wrap real primitive type into object it automatically becomes truthy in logical comparisons. It may lead to hard to track bugs and unpredictable errors in application logic.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 var x = new Boolean(false);
  
 if (x) {
     alert('hi');  // Shows 'hi'.
 }
-CONSIDER
-Icon
-Use constructors of wrapper objects for type casting.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Use constructors of wrapper objects for type casting.
+
 This guideline does not prohibit use of more succinct forms of typecasting. Treat them all equally, but keep in mind that additionally, primitive constructors are capable of unboxing wrapped primitives into real values.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var x = Boolean(0);
  
 if (x) {
@@ -772,59 +858,72 @@ if (x) {
  
 typeof Boolean(0) === 'boolean';
 typeof new Boolean(0) === 'object';
-Delete
-CONSIDER
-Icon
-Setting property to null instead of deleting it.
+```
+
+### Delete
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Setting property to null instead of deleting it.
+
 In modern JavaScript engines, changing the number of properties on an object is much slower than reassigning the values. The delete keyword should be avoided except when it is necessary to remove a property from an object's iterated list of keys, or to change the result of if (key in obj).
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 Foo.prototype.dispose = function () {
     this.property = null;
 };
- Wrong
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 Foo.prototype.dispose = function () {
     delete this.property;
 };
-With() {}
-DO NOT
-Icon
-Use "with" statement.
+```
+
+### With() {}
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "with" statement.
+
 Using "with" hides the semantics of your program. Because the object of the "with" statement can have properties that collide with local variables, it can drastically change the meaning of your program.
-For-in loop
-DO
-Icon
-Use it only for iterating over keys in an object.
+
+### For-in loop
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use it only for iterating over keys in an object.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 for (var key in person) {
     var value = person[key];
     console.log(key + ': ' + value);
 }
-DO NOT
-Icon
-Use it to loop over the elements in an Array.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use it to loop over the elements in an Array.
+
 This is very error prone because it does not loop from 0 to length - 1 but over all the present keys in the object and its prototype chain.
  	
- Wrong
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+```javascript
 var data = [0, 25, 25, 45, 123, 10];
  
 for (var key in data) {
     var value = data[key];
     console.log(key + ': ' + value);
 }
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var data = [0, 25, 25, 45, 123, 10];
  
 for (var i = 0; i < data.length; i++) {
     var value = data[i];
     console.log(key + ': ' + value);
 }
-CONSIDER
-Icon
-Filtering iterated properties with hasOwnProperty.
+```
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Filtering iterated properties with hasOwnProperty.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 var person = {
     firstName: 'John',
     secondName: 'Shepard'
@@ -836,15 +935,14 @@ for (var key in person) {
         console.log(key + ': ' + value);
     }
 }
-=== and !== operators
-DO
-Icon
-Prefer strict comparisons ("===" and "!==").
-CONSIDER
-Icon
-Using regular comparisons where implicit type casting is desirable.
+```
+
+### === and !== operators
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Prefer strict comparisons ("===" and "!==").
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Using regular comparisons where implicit type casting is desirable.
  	
- Right
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 function f(x) {
     if (x == null) { // Checks whether x is null or undefined.
         return 0;
@@ -852,12 +950,28 @@ function f(x) {
  
     return x;
 }
-Modifying prototypes of built-in objects
-DO NOT
-Icon
-Modify prototype of host and native objects.
+```
+
+### Modifying prototypes of built-in objects
+
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Modify prototype of host and native objects.
+
 Modifying prototypes of Object, Array, Function and other built-ins is dangerous and may lead to hard to debug issues in production and should be avoided.
  
-DO
-Icon
-Write extensions in a form of utility objects instead of extending prototypes of built-in objects.
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write extensions in a form of utility objects instead of extending prototypes of built-in objects.
+
+## Q&A
+
+**"Why do you recommend declaring variables close to where they are actually used, while many practitioners, including Douglas Crockford and David Flanagan, recommend declaring all of them at the beginning of the function?"**
+
+There is no community ratified way of declaring variables. Followers of Crockford's style claim that, in absence of block level scoping for variables, this style protects developers from nuances of "hoisting". We strongly believe that this type of errors is rare even among beginner programmers, but has negative impact on locality of variables. Despite the fact that only functions create lifetime boundaries for variables, there is always a "psychic weight" that variables put on programmers. The best way to avoid "psychic weight" is to declare variables close to where they are actually used. We believe that in this particular case, understandability of the code outweighs chances of possible errors. 
+
+
+**"Why do you recommend using individual var statements for multiple variable declarations, while many practitioners, including David Flanagan, recommend combining all of them under single var statement?"**
+
+Former approach introduces additional maintenance cost by making programmer carefully watching for , and ;. By using individual var statements you can release your brain from remembering and watching for punctuation instead of doing useful programming. 
+
+
+**"One of the guidelines says that Pi should be written like this, and not PI or pi, but this violates general naming guidelines for constants."** 
+
+What capitalization guidelines really say is that you should apply appropriate capitalization as stated in section "Naming" without violating general naming guidelines. If in your code pi is a constant – you should write like PI, because general naming guidelines have higher order of precedence then capitalization guidelines. But there are cases where Pi is not a constant, for example method called computePi().
