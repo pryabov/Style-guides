@@ -1,5 +1,6 @@
-Formatting Guidelines
-General
+# CSS style-guide
+
+## General
 DO
 Icon
 Always use US-English in CSS.
