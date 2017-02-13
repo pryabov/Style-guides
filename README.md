@@ -4,17 +4,15 @@
 
 ### **Indentation**
 
-#### DO
-Use four spaces for indentation.
+DO: Use four spaces for indentation.
 
-#### CONSIDER
+#### CONSIDER:
 Try to keep lines to 120 characters or less.
 Think of this guideline as a recommendation not a rule. Do not sacrifice expressiveness in a favor of line length.
  
-#### DO NOT
-Mix indentation styles within a project.
+DO NOT: Mix indentation styles within a project.
 
-#### CONSIDER
+#### CONSIDER:
 Enforce indentation rules at compile time with JSHint.
 How to configure? [Awaits to be discussed]
  
