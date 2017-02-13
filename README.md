@@ -130,8 +130,8 @@ ko.exportSymbol = function (koPath, object) {
 // In the future, the following "ko" variable may be made distinct from "koExports" so that private objects are not externally reachable.
 var ko = typeof koExports !== 'undefined' ? koExports : {};
 ```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
 ```javascript
- Wrong
 // Declare variable foo as an integer and set it to three.
 var foo = 3;
 ```
@@ -580,7 +580,9 @@ function Person() {
     this.firstName= 'Douglas';
     this.lastName = 'Crockford';
 }
- Right
+```
+![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+```javascript
 (function () {
     'use strict';
  
@@ -771,7 +773,7 @@ function Activity(name) {
 
 ![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use custom exceptions to indicate exceptional flow of execution.
  	
-Declaration
+#### Declaration:
 ```javascript
 function OutOfRangeError(value) {
     this.message = 'Value ' + value + ' is out of range.';
@@ -781,7 +783,7 @@ OutOfRangeError.prototype = new Error();
 OutOfRangeError.prototype.constructor = OutOfRangeError;
 ```
 
-Usage
+#### Usage:
 ```javascript
 function f(x) {
     if (x < 0) {
