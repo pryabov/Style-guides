@@ -2,23 +2,23 @@
 
 ### General
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Always use US-English in CSS.
+![](/images/right25.png) DO: Always use US-English in CSS.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .color-picker, .text-center
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 .colour-picker, .text-centre
 ```
 
 ### Indentation
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use four spaces to indent properties in a body of the ruleset.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Rule sets for media queries and keyframes should be indented one level in.
+![](/images/right25.png) DO: Use four spaces to indent properties in a body of the ruleset.
+![](/images/right25.png) DO: Rule sets for media queries and keyframes should be indented one level in.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 @media all and (max-width: 768px) {
     .color-picker {
@@ -26,7 +26,7 @@
     }
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 @keyframes slide-up {
     0%: {
@@ -38,25 +38,25 @@
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Keeping lines to 120 characters or less
+![](/images/consider25.png) CONSIDER: Keeping lines to 120 characters or less
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put multiple CSS properties on the same line, put them on a new line instead.
+![](/images/wrong25.png) DO NOT: Put multiple CSS properties on the same line, put them on a new line instead.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     display: none;
     background-color: red;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] { display: none; background-color: red; }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Arrange long, comma-separated property values - such as collections of gradients or shadows - across multiple lines.
+![](/images/right25.png?raw=true) DO: Arrange long, comma-separated property values - such as collections of gradients or shadows - across multiple lines.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .selector {
     background-image:
@@ -67,7 +67,7 @@ input[type="text"] { display: none; background-color: red; }
         2px 2px 1px 1px #ccc inset;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 .selector {
     background-image: linear-gradient(#fff, #ccc),
@@ -77,9 +77,9 @@ input[type="text"] { display: none; background-color: red; }
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use one discrete selector per line in multi-selector rulesets.
+![](/images/right25.png) DO: Use one discrete selector per line in multi-selector rulesets.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 a,
 span,
@@ -87,7 +87,7 @@ h1 {
     margin: 0;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 a, span, h1 {
     margin: 0;
@@ -96,15 +96,15 @@ a, span, h1 {
 
 ### Quotes
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use double quotation marks for attribute selectors and property values.
+![](/images/right25.png) DO: Use double quotation marks for attribute selectors and property values.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     content: "Text";
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type='text'] {
     content: 'Text';
@@ -113,20 +113,20 @@ input[type='text'] {
  
 ### Whitespacing
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Separate each ruleset by a blank line.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Leave opening curly brace on the same line with selector portion of the Rule Set.
+![](/images/right25.png) DO: Separate each ruleset by a blank line.
+![](/images/right25.png) DO: Leave opening curly brace on the same line with selector portion of the Rule Set.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     content: "Text";
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] { content: "Text"; }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] 
 { 
@@ -134,60 +134,60 @@ input[type="text"]
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use a space after a property name’s colon.
+![](/images/right25.png) DO: Use a space after a property name’s colon.
 
 Always use a single space between property and value (but no space between property and colon) for consistency reasons.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     display: none;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] {
     display : none;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] {
     display:none
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use a space between the last selector and the declaration block.
+![](/images/right25.png) DO: Use a space between the last selector and the declaration block.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     content: "Text";
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"]{
     content: "Text";
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Pad parentheses with spaces.
+![](/images/wrong25.png) DO NOT: Pad parentheses with spaces.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 @media all and (max-width: 620px) {
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 @media all and ( max-width: 620px ) {
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Group style sheet sections together by using comments. Separate sections with new lines.
+![](/images/right25.png) DO: Group style sheet sections together by using comments. Separate sections with new lines.
 
 For large projects it is preferable to keep reusable modules in separate CSS files, so no commenting is usually necessary.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 /* Header */
  
@@ -204,23 +204,23 @@ For large projects it is preferable to keep reusable modules in separate CSS fil
 
 ### Semicolon
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use a semicolon after every declaration.
+![](/images/right25.png) DO: Use a semicolon after every declaration.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 input[type="text"] { 
     display: none;
     background-color: black;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] {
     display: none;
     background-color: black
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 input[type="text"] {
     display: none
@@ -230,16 +230,16 @@ input[type="text"] {
 
 ### Colon and double colon
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use double colon for pseudo-elements and single colon for pseudo-classes when all targeting platforms support double-colon notation (typically IE > 8).
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use single colon for pseudo-elements and pseudo-classes when at least one of the targeting platforms doesn't support double colon notation (typically IE < 9).
+![](/images/right25.png?raw=true) DO: Use double colon for pseudo-elements and single colon for pseudo-classes when all targeting platforms support double-colon notation (typically IE > 8).
+![](/images/right25.png?raw=true) DO: Use single colon for pseudo-elements and pseudo-classes when at least one of the targeting platforms doesn't support double colon notation (typically IE < 9).
 
 ### Grouping
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Group and/or sort CSS properties in a specific order.
+![](/images/right25.png) DO: Group and/or sort CSS properties in a specific order.
 
 This process can be automated with tools like CSSComb.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .selector {
     /* Positioning */
@@ -273,43 +273,43 @@ This process can be automated with tools like CSSComb.
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Group media queries by media after corresponding styles.
+![](/images/right25.png) DO: Group media queries by media after corresponding styles.
  
 ### Shorthands
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Put CSS unit specification after "0" values, unless necessary, such as with transition-duration.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use following notations to define colors: hex, rgba, hsl, hsla notations, while rgb and shorthand notations are disallowed.
+![](/images/wrong25.png) DO NOT: Put CSS unit specification after "0" values, unless necessary, such as with transition-duration.
+![](/images/right25.png) DO: Use following notations to define colors: hex, rgba, hsl, hsla notations, while rgb and shorthand notations are disallowed.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 #aaa, rgba(255, 115, 0, 0.3), hsl(120,100%,50%), hsla(120,100%,50%,0.3)
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 rgb(255, 113, 80), white, black
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use shorthand hex values.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use lowercase hex values.
+![](/images/wrong25.png) DO NOT: Use shorthand hex values.
+![](/images/right25.png) DO: Use lowercase hex values.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 #aaaaaa, #11ffcc, #23c1f2
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 #AAAAAA, #11FFCC, #23C1F2
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use shorthand property when you need to fill all of the values of CSS property group.
+![](/images/right25.png) DO: Use shorthand property when you need to fill all of the values of CSS property group.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 h1 { 
     margin: 10px 0 20px 0
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 h1 {
     margin-top: 10px;
@@ -321,12 +321,12 @@ h1 {
 
 ### Naming guidelines
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use meaningful or generic ID and class names.
+![](/images/right25.png) DO: Use meaningful or generic ID and class names.
 
 Instead of presentational or cryptic names, always use ID and class names that reflect the purpose of the element in question, or that are otherwise generic.
 Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 /* Recommended: specific */
 #gallery {}
@@ -337,7 +337,7 @@ Names that are specific and reflect the purpose of the element should be preferr
 .aux {}
 .alt {}
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 /* Not recommended: meaningless */
 #yee-1901 {}
@@ -346,9 +346,9 @@ Names that are specific and reflect the purpose of the element should be preferr
 .button-green {}
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use presentational names for id and class names.
+![](/images/wrong25.png) DO NOT: Use presentational names for id and class names.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 .button-green {
     color: green;
@@ -359,35 +359,35 @@ Names that are specific and reflect the purpose of the element should be preferr
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Maintain a glossary of abbreviations used for id and class names.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Use hyphen-delimited case for id and class names.
+![](/images/right25.png) DO: Maintain a glossary of abbreviations used for id and class names.
+![](/images/right25.png) DO: Use hyphen-delimited case for id and class names.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 #nav-section, .media-info, .tab-body
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 #navSection, .MediaInfo, .tabbody
 ```
 
 ### Comments
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Avoid heavy commenting stylesheets.
+![](/images/right25.png) DO: Avoid heavy commenting stylesheets.
 
 CSS by its nature is declarative language, so usually no comments are required at all.
 
 ### Functional Guidelines
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Avoid using ids, except for general layout elements.
+![](/images/right25.png) DO: Avoid using ids, except for general layout elements.
 
 Use of ids limits reusability and introduces specificity issues.
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write unprefixed properties after prefixed ones.
+![](/images/right25.png) DO: Write unprefixed properties after prefixed ones.
 
 By doing this you will make sure, that browser will pick standardized property if possible.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .selector {
     -webkit-box-sizing: border-box;
@@ -395,7 +395,7 @@ By doing this you will make sure, that browser will pick standardized property i
     box-sizing: border-box;
 }
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 .selector {
     box-sizing: border-box;
@@ -404,45 +404,45 @@ By doing this you will make sure, that browser will pick standardized property i
 }
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "magic numbers".
+![](/images/wrong25.png) DO NOT: Use "magic numbers".
 
 Magic number is a circumstantial number, or number with purpose of fixing symptoms, not real issues, and as such, we should not rely on it.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Write cross-browser CSS as much as possible.
+![](/images/right25.png) DO: Write cross-browser CSS as much as possible.
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Falling back to conditional comments and browser specific hacks, if and only if it is technically infeasible to achieve desirable behavior in cross-browser manner. 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Using Normalize.css to normalize inconsistencies in user-agent styles. 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Allow parent container to collapse when there is a content within.
+![](/images/consider25.png) CONSIDER: Falling back to conditional comments and browser specific hacks, if and only if it is technically infeasible to achieve desirable behavior in cross-browser manner. 
+![](/images/consider25.png) CONSIDER: Using Normalize.css to normalize inconsistencies in user-agent styles. 
+![](/images/wrong25.png) DO NOT: Allow parent container to collapse when there is a content within.
 
 By allowing container to collapse, you make your surrounding markup easy to flow in unpredictable manner.
  
 ![](/images/overflow-float.png)
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Use "!important" to overcome selector specificity issues when it is possible to avoid it.
+![]r/images/wrong25.png) DO NOT: Use "!important" to overcome selector specificity issues when it is possible to avoid it.
 
 However, there are cases where !important is allowed. For example, state styles.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Prefix selectors with unique prefix, when you have a need to isolate component or whole application from outer environment.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Over-qualify selectors with non-semantic parts.
+![](/images/right25.png) DO: Prefix selectors with unique prefix, when you have a need to isolate component or whole application from outer environment.
+![](/images/wrong25.png) DO NOT: Over-qualify selectors with non-semantic parts.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .selector
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 div.selector
 ```
 
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/consider25.png?raw=true) CONSIDER: Using grunt-autoprefixer or similar tool to easily manage necessary browser prefixes.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/right25.png?raw=true) DO: Attempt to remove code before adding more, when fixing an issue.
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrong25.png?raw=true) DO NOT: Tie selectors to particular DOM structure. Introduce semantic parts instead.
+![](/images/consider25.png) CONSIDER: Using grunt-autoprefixer or similar tool to easily manage necessary browser prefixes.
+![](/images/right25.png) DO: Attempt to remove code before adding more, when fixing an issue.
+![](/images/wrong25.png) DO NOT: Tie selectors to particular DOM structure. Introduce semantic parts instead.
  
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/rightmark20.png?raw=true)
+![](/images/rightmark20.png)
 ```css
 .file-upload .file-upload-info .file-upload-info-title
 ```
-![](https://github.com/AleksandrCh/Style-guides/blob/master/images/wrongmark20.png?raw=true)
+![](/images/wrongmark20.png)
 ```css
 div.file-upload div:nth-child(2) > span
 ```
